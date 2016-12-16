@@ -1,0 +1,22 @@
+  include *.rst
+  include *.txt
+  include *.py
+  include requirements.txt
+  include tests/requirements-test.txt
+  include *.yml
+  recursive-include docs *.py
+  recursive-include docs *.rst
+  recursive-include optirt *.py
+  recursive-include tests *.py
+  recursive-include examples *.py
+
+  exclude .gitkeep
+  exclude .gitconfig
+  exclude tox.ini
+  exclude .travis.yml
+  exclude appveyor.yml
+  prune .travis
+  prune install_deps.sh
+
+  include LICENSE
+  recursive-include optirt *.py
