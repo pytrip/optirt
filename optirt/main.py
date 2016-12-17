@@ -18,11 +18,14 @@ def main(args=sys.argv[1:]):
     args = parser.parse_args(args)
 
     if args.verbosity == 1:
-        logging.basicConfig(level=logging.INFO)
+        logger.setLevel(logging.INFO)
     if args.verbosity > 1:
-        logging.basicConfig(level=logging.DEBUG)
+        logger.setLevel(logging.DEBUG)
 
-    print("Hello world")
+    print("Hello world!")
+
+    logger.debug("We are very verbose here.")
+
     return 0
 
 

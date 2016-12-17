@@ -19,4 +19,6 @@
   prune install_deps.sh
 
   include LICENSE
+  include GPL_LICENSE
+  recursive-include appveyor *.sh
   recursive-include optirt *.py

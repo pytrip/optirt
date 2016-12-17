@@ -19,11 +19,8 @@
 """
 TODO: documentation here.
 """
-import os
 import setuptools
 from pkg_resources import parse_version
-
-import numpy as np
 
 
 def pip_command_output(pip_args):
@@ -180,9 +177,9 @@ setuptools.setup(
     ],
     # install_requires=[
     # ],
-    # entry_points={
-    #     'console_scripts': [
-    #         'command=optirt.file:function',
-    #     ],
-    # },
+    entry_points={
+        'console_scripts': [
+            'optirt=optirt.main:main',
+        ],
+    },
     cmdclass=get_cmdclass())
